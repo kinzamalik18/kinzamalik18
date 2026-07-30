@@ -5,7 +5,7 @@ from PIL import Image
 from rembg import remove
 
 # Configuration
-INPUT_IMAGE = "picture.jpg"
+INPUT_IMAGE = "pic.jpg"
 OUTPUT_SVG = "portrait.svg"
 FONT_B64_FILE = "font_ramp_b64.txt"
 RAMP = " .:-=+*#%@"  # Clean symmetric 9-level brightness ramp
