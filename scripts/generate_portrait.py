@@ -5,7 +5,7 @@ from PIL import Image
 from rembg import remove
 
 # Configuration
-INPUT_IMAGE = "picture.jpeg"
+INPUT_IMAGE = "picture.jpg"
 OUTPUT_SVG = "portrait.svg"
 FONT_B64_FILE = "font_ramp_b64.txt"
 RAMP = " .`:-=+*cs#%@"  # 13 levels of brightness (space is brightest, @ is darkest)
