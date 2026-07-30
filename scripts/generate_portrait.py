@@ -8,10 +8,10 @@ from rembg import remove
 INPUT_IMAGE = "picture.jpg"
 OUTPUT_SVG = "portrait.svg"
 FONT_B64_FILE = "font_ramp_b64.txt"
-RAMP = " .`:-=+*cs#%@"  # 13 levels of brightness (space is brightest, @ is darkest)
-COLS = 90
-CHAR_W = 7.74  # JetBrains Mono at 12.9px size has exactly 7.74px advance width (0.6 em)
-Y_SPACING = 13.0  # Line height spacing in pixels
+RAMP = " .:-=+*#%@"  # Clean symmetric 9-level brightness ramp
+COLS = 80
+CHAR_W = 8.5  # Horizontal character width spacing in pixels
+Y_SPACING = 15.0  # Line height spacing in pixels
 ANIM_SPEED = 0.08  # Stagger delay between rows in seconds
 ROW_DUR = 0.4  # Duration of typing animation for a single row in seconds
 
@@ -50,10 +50,10 @@ def process_image(img_path):
     clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
     contrast = clahe.apply(smoothed)
     
-    # 5. Apply Darkening Curve (v/255)^1.7 to preserve features
+    # 5. Apply Darkening Curve (v/255)^1.9 to preserve features and enhance sharpness
     print("Applying darkening curve...")
     normalized = contrast / 255.0
-    darkened = np.power(normalized, 1.7) * 255.0
+    darkened = np.power(normalized, 1.9) * 255.0
     darkened = darkened.astype(np.uint8)
     
     # 6. Resize to target columns while maintaining aspect ratio and correcting for font height
@@ -91,7 +91,7 @@ def generate_svg(pixel_grid, cols, rows):
         svg_parts.append('    </style>')
     
     svg_parts.append('    <style>')
-    svg_parts.append("      .row { font-family: 'JetBrains Mono', monospace; font-size: 12.9px; fill: #c9d1d9; white-space: pre; }")
+    svg_parts.append("      .row { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.5px; fill: #c9d1d9; white-space: pre; }")
     svg_parts.append('      .cursor { fill: #58a6ff; }')
     svg_parts.append('      @media (prefers-color-scheme: light) {')
     svg_parts.append('        .row { fill: #24292f; }')
