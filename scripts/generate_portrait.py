@@ -41,22 +41,32 @@ def process_image(img_path):
     gray = cv2.cvtColor(rgba_np, cv2.COLOR_RGBA2GRAY)
     gray[a == 0] = 255  # Force background to white (maps to space character)
     
-    # 3. Apply Bilateral Filter to smooth skin but preserve edges
-    print("Applying bilateral filter...")
-    smoothed = cv2.bilateralFilter(gray, d=9, sigmaColor=75, sigmaSpace=75)
+    # 3. Apply Unsharp Masking & Bilateral Filter to sharpen boundaries while smoothing skin
+    print("Applying sharpening filter and bilateral edge preservation...")
+    blur = cv2.GaussianBlur(gray, (0, 0), 3.0)
+    sharpened = cv2.addWeighted(gray, 1.8, blur, -0.8, 0)
+    smoothed = cv2.bilateralFilter(sharpened, d=7, sigmaColor=50, sigmaSpace=50)
     
-    # 4. Apply CLAHE (Contrast Limited Adaptive Histogram Equalization)
+    # 4. Detect boundary edges (eyes, lips, jawline, hair, collar) using Canny
+    print("Extracting boundary edges...")
+    edges = cv2.Canny(smoothed, threshold1=40, threshold2=120)
+    
+    # 5. Apply CLAHE local contrast enhancement
     print("Applying CLAHE local contrast enhancement...")
-    clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+    clahe = cv2.createCLAHE(clipLimit=3.5, tileGridSize=(8, 8))
     contrast = clahe.apply(smoothed)
     
-    # 5. Apply Darkening Curve (v/255)^1.9 to preserve features and enhance sharpness
-    print("Applying darkening curve...")
+    # 6. Apply Darkening Curve and superimpose boundary edge map
+    print("Applying darkening curve and superimposing boundary edges...")
     normalized = contrast / 255.0
-    darkened = np.power(normalized, 1.9) * 255.0
+    darkened = np.power(normalized, 1.8) * 255.0
     darkened = darkened.astype(np.uint8)
     
-    # 6. Resize to target columns while maintaining aspect ratio and correcting for font height
+    # Darken detected boundary edges so outlines stand out clearly
+    edge_mask = (edges > 0) & (a > 0)
+    darkened[edge_mask] = np.clip(darkened[edge_mask].astype(int) - 90, 0, 255).astype(np.uint8)
+    
+    # 7. Resize to target columns while maintaining aspect ratio and correcting for font height
     h, w = darkened.shape
     aspect_ratio = h / w
     # Monospace characters are roughly 0.48 times as wide as they are tall in our layout
