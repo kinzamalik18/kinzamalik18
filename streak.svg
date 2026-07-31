@@ -32,12 +32,12 @@
   <text x="15" y="25" class="title">STREAKS</text>
   <g transform="translate(15, 40)">
     <text x="0" y="15" class="sub">Current Streak</text>
-    <text x="0" y="42" class="value">0 days</text>
-    <text x="0" y="58" class="sub">No active streak</text>
+    <text x="0" y="42" class="value">2 days</text>
+    <text x="0" y="58" class="sub">Jul 30 - Jul 31</text>
   </g>
   <g transform="translate(240, 40)">
     <text x="0" y="15" class="sub">Longest Streak</text>
-    <text x="0" y="42" class="value">32 days</text>
-    <text x="0" y="58" class="sub">Nov 29, 2025 - Dec 30, 2025</text>
+    <text x="0" y="42" class="value">5 days</text>
+    <text x="0" y="58" class="sub">Mar 07 - Mar 11</text>
   </g>
 </svg>
