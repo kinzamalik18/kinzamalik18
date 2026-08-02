@@ -32,14 +32,14 @@
   <text x="15" y="25" class="title">TOP LANGUAGES</text>
   <!-- Language Progress Bar -->
   <mask id="bar-mask"><rect x="15" y="45" width="430.0" height="10.0" rx="5" fill="white" /></mask>
-  <rect x="15.0" y="45" width="408.8" height="10.0" fill="#3178c6" mask="url(#bar-mask)" />
-  <rect x="423.8" y="45" width="5.9" height="10.0" fill="#663399" mask="url(#bar-mask)" />
-  <rect x="429.7" y="45" width="5.5" height="10.0" fill="#f1e05a" mask="url(#bar-mask)" />
-  <rect x="435.2" y="45" width="3.1" height="10.0" fill="#dea584" mask="url(#bar-mask)" />
-  <rect x="438.2" y="45" width="2.4" height="10.0" fill="#e34c26" mask="url(#bar-mask)" />
+  <rect x="15.0" y="45" width="408.6" height="10.0" fill="#3178c6" mask="url(#bar-mask)" />
+  <rect x="423.6" y="45" width="5.9" height="10.0" fill="#663399" mask="url(#bar-mask)" />
+  <rect x="429.5" y="45" width="5.5" height="10.0" fill="#f1e05a" mask="url(#bar-mask)" />
+  <rect x="435.0" y="45" width="3.0" height="10.0" fill="#dea584" mask="url(#bar-mask)" />
+  <rect x="438.0" y="45" width="2.4" height="10.0" fill="#e34c26" mask="url(#bar-mask)" />
   <!-- Legend -->
   <circle cx="21" cy="76" r="5" fill="#3178c6" />
-  <text x="33" y="80">TypeScript <tspan class="sub">95.1%</tspan></text>
+  <text x="33" y="80">TypeScript <tspan class="sub">95.0%</tspan></text>
   <circle cx="166" cy="76" r="5" fill="#663399" />
   <text x="178" y="80">CSS <tspan class="sub">1.4%</tspan></text>
   <circle cx="311" cy="76" r="5" fill="#f1e05a" />

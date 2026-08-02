@@ -30,7 +30,7 @@
     </style>
   </defs>
   <text x="15" y="25" class="title">CONTRIBUTIONS</text>
-  <text x="15" y="60" class="value">129</text>
+  <text x="15" y="60" class="value">140</text>
   <text x="15" y="80" class="sub">Total in the past year</text>
   <!-- Sparkline -->
     <rect x="200.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
@@ -62,17 +62,17 @@
     <rect x="317.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="321.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="326.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="330.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="335.0" y="67.6" width="3.5" height="12.4" class="accent" rx="0.5" />
-    <rect x="339.5" y="53.9" width="3.5" height="26.1" class="accent" rx="0.5" />
-    <rect x="344.0" y="66.2" width="3.5" height="13.8" class="accent" rx="0.5" />
-    <rect x="348.5" y="75.9" width="3.5" height="4.1" class="accent" rx="0.5" />
+    <rect x="330.5" y="67.6" width="3.5" height="12.4" class="accent" rx="0.5" />
+    <rect x="335.0" y="53.9" width="3.5" height="26.1" class="accent" rx="0.5" />
+    <rect x="339.5" y="66.2" width="3.5" height="13.8" class="accent" rx="0.5" />
+    <rect x="344.0" y="75.9" width="3.5" height="4.1" class="accent" rx="0.5" />
+    <rect x="348.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="353.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="357.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="362.0" y="30.5" width="3.5" height="49.5" class="accent" rx="0.5" />
-    <rect x="366.5" y="75.9" width="3.5" height="4.1" class="accent" rx="0.5" />
-    <rect x="371.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="375.5" y="25.0" width="3.5" height="55.0" class="accent" rx="0.5" />
+    <rect x="357.5" y="30.5" width="3.5" height="49.5" class="accent" rx="0.5" />
+    <rect x="362.0" y="75.9" width="3.5" height="4.1" class="accent" rx="0.5" />
+    <rect x="366.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
+    <rect x="371.0" y="25.0" width="3.5" height="55.0" class="accent" rx="0.5" />
+    <rect x="375.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="380.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="384.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="389.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
@@ -83,6 +83,6 @@
     <rect x="411.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="416.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="420.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="425.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="429.5" y="67.6" width="3.5" height="12.4" class="accent" rx="0.5" />
+    <rect x="425.0" y="52.5" width="3.5" height="27.5" class="accent" rx="0.5" />
+    <rect x="429.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
 </svg>
