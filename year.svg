@@ -34,11 +34,11 @@
   <text x="15" y="94" class="sub">W</text>
   <text x="15" y="120" class="sub">F</text>
   <!-- Character Grid -->
-  <text x="40" y="55" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">...............................:.....................</text>
-  <text x="40" y="68" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">.......................................%.............</text>
-  <text x="40" y="81" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">................................`....................</text>
-  <text x="40" y="94" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">...............................`.....................</text>
-  <text x="40" y="107" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">...................................................`.</text>
-  <text x="40" y="120" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">...................................................:.</text>
-  <text x="40" y="133" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">..............................`.....#................</text>
+  <text x="40" y="55" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">..............................:......................</text>
+  <text x="40" y="68" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">......................................%..............</text>
+  <text x="40" y="81" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">...............................`.....................</text>
+  <text x="40" y="94" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">..............................`......................</text>
+  <text x="40" y="107" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">..................................................`..</text>
+  <text x="40" y="120" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">..................................................:..</text>
+  <text x="40" y="133" style="font-family: 'JetBrains Mono', monospace; white-space: pre;">.............................`.....#.................</text>
 </svg>
