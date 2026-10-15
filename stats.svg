@@ -30,7 +30,7 @@
     </style>
   </defs>
   <text x="15" y="25" class="title">CONTRIBUTIONS</text>
-  <text x="15" y="60" class="value">140</text>
+  <text x="15" y="60" class="value">166</text>
   <text x="15" y="80" class="sub">Total in the past year</text>
   <!-- Sparkline -->
     <rect x="200.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
@@ -84,5 +84,5 @@
     <rect x="416.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="420.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
     <rect x="425.0" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
-    <rect x="429.5" y="78.5" width="3.5" height="1.5" class="dim" rx="0.5" />
+    <rect x="429.5" y="44.2" width="3.5" height="35.8" class="accent" rx="0.5" />
 </svg>
