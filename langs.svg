@@ -32,10 +32,10 @@
   <text x="15" y="25" class="title">TOP LANGUAGES</text>
   <!-- Language Progress Bar -->
   <mask id="bar-mask"><rect x="15" y="45" width="430.0" height="10.0" rx="5" fill="white" /></mask>
-  <rect x="15.0" y="45" width="404.6" height="10.0" fill="#3178c6" mask="url(#bar-mask)" />
-  <rect x="419.6" y="45" width="5.9" height="10.0" fill="#663399" mask="url(#bar-mask)" />
-  <rect x="425.5" y="45" width="5.5" height="10.0" fill="#f1e05a" mask="url(#bar-mask)" />
-  <rect x="431.0" y="45" width="4.3" height="10.0" fill="#3572A5" mask="url(#bar-mask)" />
+  <rect x="15.0" y="45" width="404.5" height="10.0" fill="#3178c6" mask="url(#bar-mask)" />
+  <rect x="419.5" y="45" width="5.9" height="10.0" fill="#663399" mask="url(#bar-mask)" />
+  <rect x="425.4" y="45" width="5.5" height="10.0" fill="#f1e05a" mask="url(#bar-mask)" />
+  <rect x="430.9" y="45" width="4.3" height="10.0" fill="#3572A5" mask="url(#bar-mask)" />
   <rect x="435.3" y="45" width="3.0" height="10.0" fill="#dea584" mask="url(#bar-mask)" />
   <!-- Legend -->
   <circle cx="21" cy="76" r="5" fill="#3178c6" />
